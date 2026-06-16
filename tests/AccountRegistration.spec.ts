@@ -30,12 +30,7 @@ test.beforeEach(async ({ page }) => {
 })
 
 
-test.afterEach(async ({ page }) => {
-
-    await page.waitForTimeout(3000);
-    await page.close();
-
-})
+// Playwright fixture automatically closes pages, no manual cleanup needed
 
 
 test('User registration test @master @sanity @regression', async () => {
@@ -47,7 +42,7 @@ test('User registration test @master @sanity @regression', async () => {
 
     //Fill in registration details with random data
     await registrationPage.setFirstName(RandomDataUtil.getFirstName());
-    await registrationPage.setLastName(RandomDataUtil.getlastName());
+    await registrationPage.setLastName(RandomDataUtil.getLastName());
     await registrationPage.setEmail(RandomDataUtil.getEmail());
     await registrationPage.setTelephone(RandomDataUtil.getPhoneNumber());
 
