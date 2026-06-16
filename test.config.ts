@@ -1,7 +1,7 @@
 export class TestConfig{
  
-    appUrl="http://localhost/opencart/upload/"
-    //appUrl="https://naveenautomationlabs.com/opencart"
+    appUrl="https://naveenautomationlabs.com/opencart"
+    //appUrl="http://localhost/opencart/upload/"
     //appUrl="https://tutorialsninja.com/demo/"
     
   

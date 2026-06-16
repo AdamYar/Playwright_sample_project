@@ -35,7 +35,7 @@ test.beforeEach(async ({ page }) => {
 // Playwright fixture automatically closes pages, no manual cleanup needed
 
 
-test('User login test @master @sanity @regression',async()=>{
+test('User login test @master @sanity @regression',async({page})=>{
 
     //Navigate to Login page via Home page
 
